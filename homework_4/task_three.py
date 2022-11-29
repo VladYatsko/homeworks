@@ -1,5 +1,6 @@
-guessed_number = input('Please guess the number '
-                       '(each symbol should be unique): ')
+import random
+
+guessed_number = str(random.randint(1000, 10000))
 bulls = 0
 cows = 0
 
