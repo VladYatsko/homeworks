@@ -1,6 +1,15 @@
 import random
 
 guessed_number = str(random.randint(1000, 10000))
+item = set()
+for number in guessed_number:
+    item.add(number)
+
+while len(item) != 4:
+    item.add(str(random.randint(0, 9)))
+
+guessed_number = f'{list(item)[0]}{list(item)[1]}' \
+                 f'{list(item)[2]}{list(item)[3]}'
 bulls = 0
 cows = 0
 
