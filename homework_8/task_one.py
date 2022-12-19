@@ -7,9 +7,7 @@ def text_up(func):
 
 @text_up
 def get_text(list_of_items):
-    result_string = ''
-    for element in list_of_items:
-        result_string += element + ' '
+    result_string = ' '.join(list_of_items)
     return result_string
 
 
