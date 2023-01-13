@@ -1,12 +1,11 @@
 class Triangle:
     def __init__(self, side_a, side_b, side_c):
-        if Triangle._is_exists(side_a, side_b, side_c):
+        if self.is_exists(side_a, side_b, side_c):
             self.side_a = side_a
             self.side_b = side_b
             self.side_c = side_c
 
-    @staticmethod
-    def _is_exists(side_a, side_b, side_c):
+    def is_exists(self, side_a, side_b, side_c):
         if side_a + side_b < side_c or \
                 side_a + side_c < side_b \
                 or side_b + side_c < side_a:
